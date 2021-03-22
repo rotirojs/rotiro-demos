@@ -1,0 +1,14 @@
+{
+  "name": "rotiro-demos",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:rotirojs/rotiro-demos.git",
+  "author": "Alex Everitt",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "./javascript-demos/express",
+    "./typescript-demos/express",
+    "./typescript-demos/claudia-js"
+  ]
+}

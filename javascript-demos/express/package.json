@@ -1,0 +1,24 @@
+{
+  "name": "rotiro-express-api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --exec babel-node  src/index.js"
+  },
+  "repository": "git@github.com:rotirojs/rotiro-express-api.git",
+  "author": "Alex Everitt",
+  "license": "MIT",
+  "dependencies": {
+    "@rotirojs/rotiro-express": "^1.0.3",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "rotiro": "^1.0.7"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.13.8",
+    "@babel/node": "^7.13.0",
+    "@babel/preset-env": "^7.13.9",
+    "nodemon": "^2.0.7",
+    "prettier": "^2.2.1"
+  }
+}

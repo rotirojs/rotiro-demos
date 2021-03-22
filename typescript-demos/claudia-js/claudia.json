@@ -1,0 +1,11 @@
+{
+  "lambda": {
+    "role": "demo-executor",
+    "name": "demo",
+    "region": "eu-west-1"
+  },
+  "api": {
+    "id": "3cjkd0maea",
+    "module": "index"
+  }
+}
