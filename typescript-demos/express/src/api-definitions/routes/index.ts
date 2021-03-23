@@ -1,4 +1,4 @@
-const { Api } = require('rotiro');
+import { Api } from 'rotiro';
 import {
   homeConfig,
   pingConfig,
