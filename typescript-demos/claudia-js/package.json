@@ -16,7 +16,7 @@
     "@rotirojs/rotiro-claudiajs": "^1.0.0",
     "claudia": "^5.13.0",
     "claudia-api-builder": "^4.1.2",
-    "rotiro": "^1.0.22"
+    "rotiro": "^1.0.29"
   },
   "devDependencies": {
     "@types/jest": "^24.9.1",

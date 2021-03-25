@@ -1,5 +1,5 @@
 import { addUser, getUsers, populateUsers } from '../../services/users';
-import {ApiRequest, RotiroError, RouteConfig} from "rotiro";
+import { ApiRequest, RotiroError, RouteConfig } from 'rotiro';
 
 export const usersConfig: RouteConfig = {
   methods: {
@@ -9,8 +9,8 @@ export const usersConfig: RouteConfig = {
     POST: {
       query: { populate: { type: 'string', optional: true } },
       body: {
-        name: { type: 'string' },
-        age: { type: 'number' }
+        name: { type: 'string', optional: true },
+        age: { type: 'number', optional: true }
       },
       controller: postController
     }
@@ -34,7 +34,7 @@ async function postController(apiRequest: ApiRequest): Promise<void> {
       );
       apiRequest.send(user);
     }
-  }else{
-    throw new RotiroError('Something went wrong')
+  } else {
+    throw new RotiroError('Something went wrong');
   }
 }
