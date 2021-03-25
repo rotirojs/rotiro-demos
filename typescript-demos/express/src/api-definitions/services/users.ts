@@ -1,5 +1,5 @@
 import { RotiroError } from 'rotiro';
-import { ErrorCodes } from 'rotiro/lib/errors/error-codes';
+import { RotiroErrorCode } from 'rotiro/lib/errors/error-codes';
 
 let nextId = 0;
 const users: Record<string, User> = {};
@@ -10,10 +10,13 @@ export interface User {
   age: number;
 }
 
-
 export async function addUser(name: string, age: number): Promise<User> {
   if (!name || age < 1) {
-    throw new RotiroError('Invalid user data', ErrorCodes.OriginalRequestNotValid)
+    throw new RotiroError(
+      'Invalid user data',
+      undefined,
+      RotiroErrorCode.OriginalRequestNotValid.toString()
+    );
   }
 
   nextId++;
@@ -31,7 +34,12 @@ export async function getUser(userId: string): Promise<User> {
   if (user) {
     return user;
   }
-  throw new RotiroError('User not found', ErrorCodes.PathNotFound)
+
+  throw new RotiroError(
+    'User not found',
+    undefined,
+    RotiroErrorCode.PathNotFound.toString()
+  );
 }
 
 export async function getUsers(): Promise<User[]> {
@@ -44,7 +52,11 @@ export async function deleteUser(userId: string): Promise<string> {
     return userId;
   }
 
-  throw new RotiroError('User not found', ErrorCodes.PathNotFound)
+  throw new RotiroError(
+    'User not found',
+    undefined,
+    RotiroErrorCode.PathNotFound.toString()
+  );
 }
 
 export async function search(query: string): Promise<User[]> {

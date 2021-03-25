@@ -1,5 +1,5 @@
-import { search } from '../../services/users';
 import {ApiRequest, RouteConfig} from 'rotiro';
+import { search } from '../../services/users';
 
 export const searchConfig: RouteConfig = {
   methods: {

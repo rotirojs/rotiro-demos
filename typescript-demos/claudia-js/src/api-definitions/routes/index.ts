@@ -2,9 +2,9 @@ import { Api } from 'rotiro';
 import {
   homeConfig,
   pingConfig,
-  usersConfig,
+  searchConfig,
   userConfig,
-  searchConfig
+  usersConfig
 } from './configs';
 
 export function createApi() {

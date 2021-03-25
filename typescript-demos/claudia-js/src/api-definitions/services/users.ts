@@ -14,7 +14,8 @@ export async function addUser(name: string, age: number): Promise<User> {
   if (!name || age < 1) {
     throw new RotiroError(
       'Invalid user data',
-      RotiroErrorCode.OriginalRequestNotValid
+      undefined,
+      RotiroErrorCode.OriginalRequestNotValid.toString()
     );
   }
 
@@ -33,7 +34,12 @@ export async function getUser(userId: string): Promise<User> {
   if (user) {
     return user;
   }
-  throw new RotiroError('User not found', RotiroErrorCode.PathNotFound);
+
+  throw new RotiroError(
+    'User not found',
+    undefined,
+    RotiroErrorCode.PathNotFound.toString()
+  );
 }
 
 export async function getUsers(): Promise<User[]> {
@@ -46,7 +52,11 @@ export async function deleteUser(userId: string): Promise<string> {
     return userId;
   }
 
-  throw new RotiroError('User not found', RotiroErrorCode.PathNotFound);
+  throw new RotiroError(
+    'User not found',
+    undefined,
+    RotiroErrorCode.PathNotFound.toString()
+  );
 }
 
 export async function search(query: string): Promise<User[]> {

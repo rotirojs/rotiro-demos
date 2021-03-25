@@ -1,5 +1,5 @@
-import { addUser, getUsers, populateUsers } from '../../services/users';
 import { ApiRequest, RotiroError, RouteConfig } from 'rotiro';
+import { addUser, getUsers, populateUsers } from '../../services/users';
 
 export const usersConfig: RouteConfig = {
   methods: {

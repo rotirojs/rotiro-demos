@@ -1,5 +1,5 @@
-import { deleteUser, getUser, updateUser } from '../../services/users';
 import {ApiRequest, RouteConfig} from 'rotiro';
+import { deleteUser, getUser, updateUser } from '../../services/users';
 
 export const userConfig: RouteConfig = {
   path: { userId: { type: 'string' } },
