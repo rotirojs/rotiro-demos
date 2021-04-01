@@ -1,4 +1,4 @@
-# Rotiro Claudia.js Demo
+# Rotiro Claudia.js with an External API Demo
 
 ## Getting started
 ```bash

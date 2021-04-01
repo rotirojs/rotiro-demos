@@ -1,9 +1,8 @@
-// import { createApi } from './routes';
 import * as bodyParser from 'body-parser';
 import * as express from 'express';
 import { Api } from 'rotiro';
 import { expressRouter } from '@rotirojs/rotiro-express';
-import {createApi} from './api-definitions';
+import { createApi } from '@rotirojs/api-demo';
 /*
  * This project is a simple example demonstrating how to build an API with Rotiro.
  */

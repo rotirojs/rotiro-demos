@@ -1,6 +1,6 @@
 # Rotiro Express/Typescript Demo
 
-This repo demonstrates how to define and implement a basic crud api with Express in typescript.
+This demo creates a very simple 'faked' api which demonstrates how to define basic GET, POST, PUT requests etc.
 
 ## Getting Started
 
@@ -15,17 +15,12 @@ followed by
 yarn start
 ```
 
-## About the demo
-This demo includes a CRUD style api structure for adding and managing some users.
-The data is stored in memory and will be lost everytime the api is restarted/rebuilt.
+## Using the demo
 
-The endpoints should be fairly self-explanatory. They also include an option to populate the user list and search the user list.
+The api will run on [http://localhost:3000](http://localhost:3000) with the following endpoints defined
+* [http://localhost:3000/ping](http://localhost:3000/ping) [GET]
+* [http://localhost:3000/users](http://localhost:3000/users) [GET, POST]
+* [http://localhost:3000/users/1](http://localhost:3000/users/1) [GET, PUT]
 
-The services that drive the api are not intended to be robust examples and are only intended to demonstrate how to hook up the api.
-
-All the services have been written as promises since this is more likely to be how your api will behave when calling a backend data source
-
-
-## Postman Files
-To help test the api there is a postman configuration file which includes the mappings to all the api endpoints along with some basic payload.
+> POST and PUT actions will need be tested using an app like Postman
 

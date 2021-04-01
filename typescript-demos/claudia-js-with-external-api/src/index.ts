@@ -1,7 +1,7 @@
 import { addRoutes } from '@rotirojs/rotiro-claudiajs';
 import ApiBuilder from 'claudia-api-builder';
 import { Api } from 'rotiro';
-import {createApi} from './routes';
+import { createApi } from '@rotirojs/api-demo';
 
 const apiBuilder: any = new ApiBuilder();
 
